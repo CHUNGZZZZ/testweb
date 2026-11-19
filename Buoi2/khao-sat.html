@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Form khảo sát</title>
+  </head>
+  <body>
+    <h1>Form khảo sát cá nhân</h1>
+    <form>
+      <ul>
+        <li>
+          <label for="full-name"> Họ và tên: </label>
+          <input
+            type="text"
+            id="full-name"
+            name="full-name"
+            placeholder="Họ và tên đầy đủ"
+          />
+        </li>
+        <li>
+          <p>Hệ điều hành bạn đang sử dụng</p>
+          <input value="win" id="win" name="operating-system" type="radio" />
+          <label for="win"> Windows </label>
+          <input value="mac" id="mac" name="operating-system" type="radio" />
+          <label for="mac"> MacOS </label>
+          <input
+            value="linux"
+            id="linux"
+            name="operating-system"
+            type="radio"
+          />
+          <label for="linux"> Linux </label>
+        </li>
+        <li>
+          <p>Khung giờ học hiệu quả nhất cho bạn</p>
+          <input value="morning" id="morning" name="time" type="radio" />
+          <label for="morning"> Sáng </label>
+          <input value="afternoon" id="afternoon" name="time" type="radio" />
+          <label for="afternoon"> Chiều </label>
+          <input value="evening" id="evening" name="time" type="radio" />
+          <label for="evening"> Tối </label>
+        </li>
+
+        <li>
+          <p>Mảng kiến thức bạn thích học nhất</p>
+          <input value="html" id="html" name="field" type="checkbox" />
+          <label for="html"> HTML/CSS </label>
+          <input
+            value="javascript"
+            id="javascript"
+            name="field"
+            type="checkbox"
+          />
+          <label for="javascript"> JavaScript/TypeScript </label>
+          <input value="backend" id="backend" name="field" type="checkbox" />
+          <label for="backend"> Backend/Database </label>
+          <input value="ai" id="ai" name="field" type="checkbox" />
+          <label for="ai"> Tích hợp AI </label>
+        </li>
+
+        <li>
+          <label for="hour"> Số giờ bạn code mỗi tuần</label>
+          <input type="number" name="hour" id="hour" placeholder="Giờ" />
+        </li>
+      </ul>
+
+      <button type="submit">Gửi khảo sát</button>
+      <button type="button">Kiểm tra nhanh</button>
+    </form>
+  </body>
+</html>

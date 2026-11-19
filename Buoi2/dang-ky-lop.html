@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Đăng kí lớp</title>
+  </head>
+  <body>
+    <h1>Lớp học HTML cơ bản</h1>
+    <p>
+      Đây là lớp học HTML cơ bản, giúp bạn phát triển khả năng lập trình web từ
+      con số 0
+    </p>
+    <ul>
+      <li>Lịch học linh hoạt</li>
+      <li>Giáo viên tâm huyết</li>
+      <li>Cam kết đầu ra</li>
+    </ul>
+    <a href="index.html"> Kiểm tra đầu vào</a>
+    <h2>Thời khóa biểu</h2>
+    <table border="1">
+      <thead>
+        <tr>
+          <th>Buổi</th>
+          <th>Thứ</th>
+          <th>2</th>
+          <th>3</th>
+          <th>4</th>
+          <th>5</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th rowspan="2">Sáng</th>
+          <th>7h-9h</th>
+          <td>Học</td>
+          <td>Nghỉ</td>
+          <td>Học</td>
+          <td>Nghỉ</td>
+        </tr>
+        <tr>
+          <th>9h-11h</th>
+          <td>Học</td>
+          <td>Nghỉ</td>
+          <td>Học</td>
+          <td>Nghỉ</td>
+        </tr>
+        <tr>
+          <th rowspan="2">Chiều</th>
+          <th>2h-4h</th>
+          <td>Nghỉ</td>
+          <td>Học</td>
+          <td>Học</td>
+          <td>Nghỉ</td>
+        </tr>
+        <tr>
+          <th>4h-6h</th>
+          <td>Nghỉ</td>
+          <td>Học</td>
+          <td>Học</td>
+          <td>Nghỉ</td>
+        </tr>
+      </tbody>
+    </table>
+    <h2>Form đăng kí</h2>
+    <form>
+      <ul>
+        <li>
+          <label for="full-name"> Họ và tên</label>
+          <input
+            id="full-name"
+            type="text"
+            name="full-name"
+            placeholder="VD: Nguyễn Văn A"
+          />
+        </li>
+        <li>
+          <p>Lựa chọn ca học</p>
+          <input type="radio" value="morning" name="time" id="morning" />
+          <label for="morning"> Buổi sáng</label>
+          <input type="radio" value="afternoon" name="time" id="afternoon" />
+          <label for="afternoon"> Buổi chiều</label>
+          <input type="radio" value="evening" name="time" id="evening" />
+          <label for="evening"> Buổi tối</label>
+        </li>
+        <li>
+          <p>Lựa chọn khóa học</p>
+          <input type="checkbox" value="basic" name="level" id="basic" />
+          <label for="basic">Cơ bản</label>
+          <input type="checkbox" value="uper" name="level" id="uper" />
+          <label for="uper">Trung cấp</label>
+          <input type="checkbox" value="advanced" name="level" id="advanced" />
+          <label for="advanced">Cao cấp</label>
+        </li>
+      </ul>
+      <button type="submit">Gửi đăng kí</button>
+      <button type="reset">Nhập lại</button>
+    </form>
+  </body>
+</html>
